@@ -1,0 +1,70 @@
+.my-exams-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.table-header-strip {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.exams-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.exams-table th {
+  padding: 12px 18px;
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.exams-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.84375rem;
+  vertical-align: middle;
+}
+
+.exams-table tbody tr:hover {
+  background-color: var(--bg-surface-hover);
+}
+
+.exams-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.exam-table-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.exam-table-action-cell {
+  text-align: right;
+  white-space: nowrap;
+}
